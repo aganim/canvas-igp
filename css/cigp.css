@@ -1,0 +1,10 @@
+.ringCount {
+    list-style-type:none;
+    margin:0;
+    width:150px;
+}
+.ringCount li {
+    width:100%;
+    padding:3px;
+    border-bottom:1px solid #CCC;
+}

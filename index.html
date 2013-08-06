@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CIGP</title>
+        <script src="js/jquery-1.7.js"></script>
+        <script src="js/jquery-ui-1.10.3.min.js"></script>
+        <link rel="stylesheet" href="css/cigp.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    </head>
+    <body>
+        <header>
+                <h1>Canvas Irregular Grid Painter</h1>
+                <p>This tool is based heavily on the work done by Zlosk on <a href="http://www.zlosk.com/pgmg/igp/">Irregular Grid Painter.</a></p> 
+                <p>Zlosk's IGP contains a number of features that are not implemented yet here such as freehand drawing, ring counting, and the ability to export to a 3d image file format.  It is an excellent tool which many folks have used over the past decade. </p>
+                <p>I intend to add most of the missing features in the near future.  If there is a particular feature you need please comment below and I will try to prioritize it.</p>
+                <p>This version is a ground-up rewrite which uses the html5 canvas element so that it can run entirely in browser.  The primary advantages to this approach are that it is platform independent, and the user does not need to install anything.</p>
+                <p>For more information, please reference the FAQ (coming soon). </p>
+                <p>The source code is available on github under the MIT license at http://github.com/aganim/canvas-igp</p>
+            <ul>
+                <li>
+                    <label for="patternSelector">Please choose a pattern:</label>
+                    <select id="patternSelector"></select>
+                </li>
+                <li hidden="true">
+                    <label for="canvasWidth">Canvas width:</label>
+                    <input type="number" value="800" id="canvasWidth"/>
+                </li>
+                <li hidden="true">
+                    <label for="canvasWidth">Canvas height:</label>
+                    <input type="number" value="600" id="canvasHeight"/>
+                </li>
+                <li hidden="true">
+                    <label for="colorPicker">Color:</label>
+                    <input type="color" value="#000000" id="colorPicker"/>
+                    <input type="button" id="colorButton" value="Set"/>
+                </li>
+                <li>
+                    <label for="sourceFile">Select File:</label>
+                    <input type="file" id="sourceFile"/>
+                </li>
+            </ul>
+            <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+                <p>After selecting a file, the canvas will resize and then begin drawing in your patterned image.  If your image begins with a large white space, it may initially appear that nothing is happening.</p>
+            </div>
+            <button id="saveImageButton">Save Patterned Image</button>
+            <button id="subtileCountButton">View Subtile Count By Color</button>
+        </header>
+        <section>
+            <article>
+                <div id="canvasDiv">
+                    <canvas width="50" height="100" id="canvas">
+                        Canvas
+                    </canvas>
+                </div>
+                <div id="patternedImageDialog" style="display:none;">
+                    <p>Right click the image in this dialog and "Save Image As..." to save.  
+                    <p>Or if you are using Chrome you have to select "Copy Image" and then paste it into an image editing program to save.</p>
+                </div>
+                <div id="subtileCountDialog" style="display:none;"></div>
+            </article>
+        </section>
+        <section hidden="true" id="imageResources"></section>
+        <footer>
+            <script src="js/imageHandler.js"></script>
+            <script src="js/subtileCount.js"></script>
+            <script src="js/classes.js"></script>
+            <script src="js/patterns.js"></script>
+            <script src="js/cigp.js"></script>
+            <script>
+                window.requestAnimFrame = (function(callback) {
+                    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                    function(callback) {
+                        window.setTimeout(callback, 1000 / 60);
+                    };
+                })();
+
+                $("document").ready(function() {
+                    // Check for the various File API support.
+                    if (window.File && window.FileReader && window.FileList && window.Blob) {
+                        // Great success! All the File APIs are supported.
+                    } else {
+                        alert('The browser you are using does not support required features.  Please try a recent version of Firefox or Chrome');
+                    }
+
+                    document.getElementById('sourceFile').addEventListener('change', cigp.handleSourceFileSelect, false);
+
+                    imageHandler.loadPatternFiles(patterns, cigp.init);
+                    
+                    $('#saveImageButton').button().click(imageHandler.savePatternedImage);
+                    $('#subtileCountButton').button().click(subtileCount.showSubtileCount);
+                })
+            </script>
+        </footer>
+    </body>
+</html>
