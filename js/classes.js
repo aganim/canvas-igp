@@ -106,9 +106,10 @@ function Subtile(subtileDef) {
 	this.getColoredImageDataCanvas = function(rgba) {
 		var coloredSubtile = coloredSubtileCache[rgba];
 		
-		var count = coloredSubtileCount[rgba];
-		if(!count) { count = 0; }
-		coloredSubtileCount[rgba] = count + 1;
+		var countObj = coloredSubtileCount[rgba];
+		if(!countObj) { countObj = {'count':0, 'color': rgba}; }
+		countObj['count'] = countObj['count'] + 1;
+                coloredSubtileCount[rgba] = countObj;
 		
 		if(!coloredSubtile){
 		   coloredSubtile = workingCanvas.getContext("2d").createImageData(imageData.width, imageData.height);

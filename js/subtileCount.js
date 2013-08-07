@@ -27,14 +27,18 @@ var subtileCount = new function() {
 			var subtileData = ['<img src="', imageURL, '" id="', subtile.getId(), '-subtileCountIcon"/>', '<ul class="ringCount">'].join('');
 			var coloredSubtileCount = subtile.getColoredSubtileCount();
 			
-			for(var color in coloredSubtileCount){
-			    subtileData += ['<li>', '<span style="background-color: #', 
-			                    colorToHexString(color), 
+			for(var entry in coloredSubtileCount){
+                            var rgba = coloredSubtileCount[entry];
+                            var r = (rgba['color'] & 0xFF000000) >>> 24;
+                            var g = (rgba['color'] & 0x00FF0000) >>> 16;
+                            var b = (rgba['color'] & 0x0000FF00) >>> 8;
+                            var a = ((rgba['color'] & 0x000000FF) >>> 0) / 255;
+			    subtileData += ['<li>', '<span style="background-color: ', 
+                                            'rgba(', r, ', ', g, ', ', b, ', ', a, ')',
 			                    '">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>',
 			                    '<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-			                    coloredSubtileCount[color], '</span>',
-			                    '<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#', 
-			                    colorToHexString(color), '</span>', '</li>'].join('');
+			                    rgba['count'],
+                                            '</span>', '</li>'].join('');
 			}
 			subtileData += '</ul>';
 			span.innerHTML = subtileData;
@@ -45,16 +49,5 @@ var subtileCount = new function() {
        
 		
 		$("#subtileCountDialog").dialog( "open" );
-	};
-	
-	var colorToHexString = function(color)
-	{
-		var number = parseInt(color);
-	    if (number < 0)
-	    {
-	    	number = 0xFFFFFFFF + number + 1;
-	    }
-
-	    return number.toString(16).toUpperCase().substring(0,6);
 	};
 }
