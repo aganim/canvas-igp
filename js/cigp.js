@@ -12,6 +12,8 @@ var cigp = new function() {
 	var canvasTop = canvas.offsetTop;
 
 	var project;
+	
+	var coloredSubtileCount = {};
 
 	/////////////////////////////////////////////////////////// Handlers
 	
@@ -115,6 +117,10 @@ var cigp = new function() {
                           '" title="' + imageName + '" id="' + imageName + '"/>'].join('');
         document.getElementById('imageResources').insertBefore(span, null);
 	};
+	
+	this.getColoredSubtileCount = function() {
+		return coloredSubtileCount;
+	};
 
     /////////////////////////////////////////////////////////// 
 	
@@ -129,6 +135,7 @@ var cigp = new function() {
 	
 	this.render = function() {
 		project.pattern = new Pattern(patterns[patternName]);
+		resetColoredSubtileCount();
 
 		var sourceImage = $('#sourceImage')[0];
 		if(sourceImage) {
@@ -179,7 +186,26 @@ var cigp = new function() {
 		var y = patternCoordinate['y'] * tile.yRepeat + subtile.yOffset;
 
 		var toDraw = subtile.getColoredImageDataCanvas(rgba);
+		
+		incrementSubtileColorCount(subtile, rgba);
+		
 		theContext.drawImage(toDraw, x, y, toDraw.width, toDraw.height);
+	};
+	
+	var resetColoredSubtileCount = function() {
+		coloredSubtileCount = {};
+	}
+	
+	var incrementSubtileColorCount = function(subtile, rgba) {
+		var subtileData = coloredSubtileCount[subtile.type];
+		if(!subtileData) { subtileData = {'subtile': subtile, 'counts': {}};}
+		coloredSubtileCount[subtile.type] = subtileData;
+		
+		var countObj = subtileData['counts'][rgba];
+		if(!countObj) { countObj = {'count':0, 'color': rgba}; }
+		countObj['count'] = countObj['count'] + 1;
+		
+		subtileData['counts'][rgba] = countObj;
 	};
 
 	var loadPattern = function() {

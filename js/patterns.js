@@ -20,7 +20,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "e4-1ga1614half-subtile2",
@@ -28,7 +29,8 @@ var patterns = {
         					xOffset : 7,
         					yOffset : 14,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"e4-1ga1614right": {
@@ -52,7 +54,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "e4-1ga1614right-subtile2",
@@ -60,7 +63,8 @@ var patterns = {
         					xOffset : 8,
         					yOffset : 18,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"e4-1ga1614wrong": {
@@ -84,7 +88,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "e4-1ga1614wrong-subtile2",
@@ -92,7 +97,8 @@ var patterns = {
         					xOffset : 15,
         					yOffset : 13,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"e4-1ga16316": {
@@ -116,7 +122,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/16 Inch Ring'
         				},
         				{
         					id : "e4-1ga16316-subtile2",
@@ -124,7 +131,8 @@ var patterns = {
         					xOffset : 7,
         					yOffset : 13,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '3/16 Inch Ring'
         				} ]
 		},
 		"e4-1ga16316wrong": {
@@ -148,7 +156,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 7,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/16 Inch Ring'
         				},
         				{
         					id : "e4-1ga16316wrong-subtile2",
@@ -156,7 +165,8 @@ var patterns = {
         					xOffset : 13,
         					yOffset : 1,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/16 Inch Ring'
         				} ]
 		},
 		"e4-1ga16516right": {
@@ -180,7 +190,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '5/16 Inch Ring'
         				},
         				{
         					id : "e4-1ga16516right-subtile2",
@@ -188,7 +199,8 @@ var patterns = {
         					xOffset : 8,
         					yOffset : 23,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '5/16 Inch Ring'
         				} ]
 		},
 		"e6-1ga16516": {
@@ -212,7 +224,8 @@ var patterns = {
         					xOffset : 22,
         					yOffset : 2,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '5/16 Inch Ring'
         				},
         				{
         					id : "e6-1ga16516-subtile2",
@@ -220,7 +233,8 @@ var patterns = {
         					xOffset : 35,
         					yOffset : 1,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '5/16 Inch Ring'
         				},
         				{
         					id : "e6-1ga16516-subtile3",
@@ -228,7 +242,8 @@ var patterns = {
         					xOffset : 4,
         					yOffset : 20,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '5/16 Inch Ring'
         				},
         				{
         					id : "e6-1ga16516-subtile4",
@@ -236,7 +251,8 @@ var patterns = {
         					xOffset : 13,
         					yOffset : 21,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '5/16 Inch Ring'
         				} ]
 		},
 		"e6-1wrong": {
@@ -260,7 +276,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1.6mm Ring'
         				},
         				{
         					id : "e6-1wrong-subtile2",
@@ -268,7 +285,8 @@ var patterns = {
         					xOffset : 32,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1.6mm Ring'
         				} ]
 		},
 		"dragonscale-ga16": {
@@ -292,7 +310,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/8 Inch Ring'
         				},
         				{
         					id : "dragonscale-ga16-subtile2",
@@ -300,7 +319,8 @@ var patterns = {
         					xOffset : 7,
         					yOffset : 4,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "dragonscale-ga16-subtile3",
@@ -308,7 +328,8 @@ var patterns = {
         					xOffset : 22,
         					yOffset : 10,
         					xSubtileIndex : 2,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/8 Inch Ring'
         				},
         				{
         					id : "dragonscale-ga16-subtile4",
@@ -316,7 +337,8 @@ var patterns = {
         					xOffset : 28,
         					yOffset : 13,
         					xSubtileIndex : 3,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"j4-1ga1638ga1614": {
@@ -340,7 +362,8 @@ var patterns = {
         					xOffset : 5,
         					yOffset : 5,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/8 Inch Ring'
         				},
         				{
         					id : "j4-1ga1638ga1614-subtile2",
@@ -348,7 +371,8 @@ var patterns = {
         					xOffset : 21,
         					yOffset : 31,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-1ga1638ga1614-subtile3",
@@ -356,7 +380,8 @@ var patterns = {
         					xOffset : 31,
         					yOffset : 21,
         					xSubtileIndex : 2,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"j4-2ga1638ga1614": {
@@ -380,7 +405,8 @@ var patterns = {
         					xOffset : 6,
         					yOffset : 6,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/8 Inch Ring'
         				},
         				{
         					id : "j4-2ga1638ga1614-subtile2",
@@ -388,7 +414,8 @@ var patterns = {
         					xOffset : 19,
         					yOffset : 31,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-2ga1638ga1614-subtile3",
@@ -396,7 +423,8 @@ var patterns = {
         					xOffset : 23,
         					yOffset : 31,
         					xSubtileIndex : 2,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-2ga1638ga1614-subtile4",
@@ -404,7 +432,8 @@ var patterns = {
         					xOffset : 31,
         					yOffset : 19,
         					xSubtileIndex : 3,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-2ga1638ga1614-subtile5",
@@ -412,7 +441,8 @@ var patterns = {
         					xOffset : 31,
         					yOffset : 23,
         					xSubtileIndex : 4,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"j4-3ga1638ga1614": {
@@ -436,7 +466,8 @@ var patterns = {
         					xOffset : 5,
         					yOffset : 5,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/8 Inch Ring'
         				},
         				{
         					id : "j4-3ga1638ga1614-subtile2",
@@ -444,7 +475,8 @@ var patterns = {
         					xOffset : 16,
         					yOffset : 29,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-3ga1638ga1614-subtile3",
@@ -452,7 +484,8 @@ var patterns = {
         					xOffset : 20,
         					yOffset : 29,
         					xSubtileIndex : 2,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-3ga1638ga1614-subtile4",
@@ -460,7 +493,8 @@ var patterns = {
         					xOffset : 24,
         					yOffset : 29,
         					xSubtileIndex : 3,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-3ga1638ga1614-subtile5",
@@ -468,7 +502,8 @@ var patterns = {
         					xOffset : 29,
         					yOffset : 16,
         					xSubtileIndex : 4,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-3ga1638ga1614-subtile6",
@@ -476,7 +511,8 @@ var patterns = {
         					xOffset : 29,
         					yOffset : 20,
         					xSubtileIndex : 5,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j4-3ga1638ga1614-subtile7",
@@ -484,7 +520,8 @@ var patterns = {
         					xOffset : 29,
         					yOffset : 24,
         					xSubtileIndex : 6,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"j6-2ga1638ga1614": {
@@ -508,7 +545,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 5,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '3/8 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile2",
@@ -516,7 +554,8 @@ var patterns = {
         					xOffset : 25,
         					yOffset : 1,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile3",
@@ -524,7 +563,8 @@ var patterns = {
         					xOffset : 27,
         					yOffset : 5,
         					xSubtileIndex : 2,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile4",
@@ -532,7 +572,8 @@ var patterns = {
         					xOffset : 54,
         					yOffset : 9,
         					xSubtileIndex : 3,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile5",
@@ -540,7 +581,8 @@ var patterns = {
         					xOffset : 58,
         					yOffset : 9,
         					xSubtileIndex : 4,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile6",
@@ -548,7 +590,8 @@ var patterns = {
         					xOffset :67,
         					yOffset : 1,
         					xSubtileIndex : 5,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile7",
@@ -556,7 +599,8 @@ var patterns = {
         					xOffset : 65,
         					yOffset : 5,
         					xSubtileIndex : 6,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile8",
@@ -564,7 +608,8 @@ var patterns = {
         					xOffset :15,
         					yOffset : 31,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile9",
@@ -572,7 +617,8 @@ var patterns = {
         					xOffset : 19,
         					yOffset : 31,
         					xSubtileIndex : 1,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile10",
@@ -580,7 +626,8 @@ var patterns = {
         					xOffset :28,
         					yOffset : 23,
         					xSubtileIndex : 2,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile11",
@@ -588,7 +635,8 @@ var patterns = {
         					xOffset : 26,
         					yOffset : 27,
         					xSubtileIndex : 3,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile12",
@@ -596,7 +644,8 @@ var patterns = {
         					xOffset :40,
         					yOffset : 27,
         					xSubtileIndex : 4,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '3/8 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile13",
@@ -604,7 +653,8 @@ var patterns = {
         					xOffset : 64,
         					yOffset : 23,
         					xSubtileIndex : 5,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				},
         				{
         					id : "j6-2ga1638ga1614-subtile14",
@@ -612,7 +662,8 @@ var patterns = {
         					xOffset :66,
         					yOffset : 27,
         					xSubtileIndex : 6,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: '1/4 Inch Ring'
         				} ]
 		},
 		"scale-1": {
@@ -636,7 +687,8 @@ var patterns = {
         					xOffset : 1,
         					yOffset : 1,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: 'Scale'
         				},
         				{
         					id : "scale-1-subtile2",
@@ -644,7 +696,8 @@ var patterns = {
         					xOffset : 15,
         					yOffset : 15,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 1
+        					ySubtileIndex : 1,
+        					type: 'Scale'
         				} ]
 		},
 		"hex-small": {
@@ -668,7 +721,8 @@ var patterns = {
         					xOffset : 0,
         					yOffset : 0,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: 'Hex'
         				} ]
 		},
 		"hex-large": {
@@ -692,7 +746,8 @@ var patterns = {
         					xOffset : 0,
         					yOffset : 0,
         					xSubtileIndex : 0,
-        					ySubtileIndex : 0
+        					ySubtileIndex : 0,
+        					type: 'Hex'
         				} ]
 		}
 };

@@ -75,16 +75,13 @@ function Subtile(subtileDef) {
 	this.yOffset = subtileDef.yOffset;
 	this.subtileXIndex = subtileDef.subtileXIndex;
 	this.subtileYIndex = subtileDef.subtileYIndex;
+	this.type = subtileDef.type;
+	if(!this.type) { this.type = id;}
 
 	var coloredSubtileCache = {};
-	var coloredSubtileCount = {};
 	
 	this.getId = function() {
 		return id;
-	};
-	
-	this.getColoredSubtileCount = function() {
-		return coloredSubtileCount;
 	};
 	
 	this.getPixelAt = function(x, y) {
@@ -105,11 +102,6 @@ function Subtile(subtileDef) {
 	
 	this.getColoredImageDataCanvas = function(rgba) {
 		var coloredSubtile = coloredSubtileCache[rgba];
-		
-		var countObj = coloredSubtileCount[rgba];
-		if(!countObj) { countObj = {'count':0, 'color': rgba}; }
-		countObj['count'] = countObj['count'] + 1;
-                coloredSubtileCount[rgba] = countObj;
 		
 		if(!coloredSubtile){
 		   coloredSubtile = workingCanvas.getContext("2d").createImageData(imageData.width, imageData.height);
