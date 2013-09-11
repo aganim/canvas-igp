@@ -242,7 +242,8 @@ var cigp = new function() {
 	    });
 		$('#patternSelector').on("change", onPatternChange);
 		
-		canvas.addEventListener("click", handleClick, false);
+		// TODO: Re-enable click to draw once it is working properly 
+		//canvas.addEventListener("click", handleClick, false);
 		$("#colorButton").click(setColor);
 		
 		project = new Project(patterns[patternName], 0, canvas);
